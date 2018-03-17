@@ -26,7 +26,7 @@ SECRET_KEY = '34w&$im7y=8jyugrr*yd#+ea1_klnhapxa=tqnjo7t=ud^dc-o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 #DEBUG = True
-ALLOWED_HOSTS = ['sibasish.co']
+ALLOWED_HOSTS = ['localhost','sibasish.co']
 #ALLOWED_HOSTS = ['']
 LOGIN_URL = '/admin'
 
@@ -40,11 +40,9 @@ DJANGO_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 )
+
 LOCAL_APPS = ('urlshorter',)
 INSTALLED_APPS = DJANGO_APPS  + LOCAL_APPS
-
-
-
 
 
 MIDDLEWARE = [
@@ -163,4 +161,4 @@ DEFAULT_BLOCK_SIZE = 24
 MIN_LENGTH = 8
 
 
-SHRT_URL_ENDPOINT = "localhost:8000/url_shrt/"
+SHRT_URL_ENDPOINT = "sibasish.co:8000/url_shrt/"
