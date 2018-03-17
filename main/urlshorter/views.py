@@ -116,6 +116,14 @@ class CleanUrlView(JSONResponseMixin,View):
         except :
             return HttpResponse("Error")
 
+    def post(self, request, *args, **kwargs):
+        try:
+            UrlStorage.objects.all().delete()
+            return self.render_to_json_response({"message":"Db Cleared"})
+        except :
+            return self.render_to_json_response({"message":"Error While Deleting All URLS!!!!!"})
+
+
 
 class ShortURLSView(JSONResponseMixin,View):
     def get(self, request, *args, **kwargs):
