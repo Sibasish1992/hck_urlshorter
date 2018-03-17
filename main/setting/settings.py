@@ -161,4 +161,4 @@ DEFAULT_BLOCK_SIZE = 24
 MIN_LENGTH = 8
 
 
-SHRT_URL_ENDPOINT = "sibasish.co:8000/url_shrt/"
+SHRT_URL_ENDPOINT = "sibasish.co/url_shrt/"
