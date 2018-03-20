@@ -23,7 +23,9 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^$', view=TemplateView.as_view(template_name="index.html"), name='index_view'),
+
     url(r'^url_shrt/', include('urlshorter.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^google0b068d3c0cad51d3.html$', TemplateView.as_view(template_name='google0b068d3c0cad51d3.html', content_type='text/plain')),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
