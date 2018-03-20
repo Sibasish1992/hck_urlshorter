@@ -18,10 +18,11 @@ from django.urls import path
 from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
-
+    url(r'^$', view=TemplateView.as_view(template_name="index.html"), name='index_view'),
     url(r'^url_shrt/', include('urlshorter.urls')),
     url(r'^admin/', admin.site.urls),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

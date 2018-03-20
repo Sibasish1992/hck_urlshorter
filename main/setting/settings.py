@@ -90,7 +90,7 @@ MEDIA_URL = '/media/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -162,3 +162,4 @@ MIN_LENGTH = 8
 
 
 SHRT_URL_ENDPOINT = "sibasish.co/url_shrt/"
+#SHRT_URL_ENDPOINT = "localhost:8001/url_shrt/"
