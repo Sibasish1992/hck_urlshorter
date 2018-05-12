@@ -1,0 +1,218 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sweety 💏 Sweeto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Sweety 💏 Sweeto" />
+
+<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+  <script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<!--webfonts-->
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Niconne' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+<!--start-home-->
+<!-- header -->
+
+<!-- //header -->
+<!-- banner -->
+<div class="banner">
+		<div class="container">
+			<div class="banner-navigation">
+					<div class="logo"  id ="home">
+
+						<h1 style="color:#00b198;">Anniversary<span style="color: #ef4fa6;"> Day</span></h1>
+
+					</div>
+					<!--script-for-menu-->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-menu ul").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+					<!--script-for-menu-->
+			</div>
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider4">
+							<li>
+								<div class="banner-info">
+									<h3>Sharmila <lable>&</lable> Sibasish</h3>
+									<strong style="color: #ef4fa6;">May 12TH, 2013</strong>
+								</div>
+							</li>
+							<li>
+								<div class="banner-info">
+
+									<h3>Sweeto <lable>&</lable> Sweety</h3>
+									<<strong style="color: #ef4fa6;">May 12TH, 2013</strong>
+								</div>
+							</li>
+					</ul>
+				</div>
+					<!--- banner Slider starts Here --->
+            <script type="text/javascript" src="{% static 'js/responsiveslides.min.js' %}"></script>
+
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+			<!----//End-slider-script---->
+		</div>
+</div>
+<!--//banner-->
+	<!--/welcome-->
+	<div class="welcome-section">
+		<div class="container">
+		   <h2>Our Day</h2>
+
+		   <h4 style="color: #ef4fa6;">12TH MAY</h4>
+		   <div class="message">
+		   <h3>Walking miles together,sharing secrets,holding hands,watching sunsets...I love everything that has you and me in it. And I love having you in my life.</h3>
+		   <h4>Our Love Is Special !</h4>
+		   </div>
+			<div class="welcome-grids">
+			<ul class="ch-grid">
+					<li>
+						<div class="col-md-6 ch-item ch-img-1">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back">
+										<h4>Sweeto</h4>
+										<h5>The Boy</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="col-md-6 ch-item ch-img-2">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back">
+										<h4>Sweety</h4>
+										<h5>The Girl</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="story-section">
+		<div class="container">
+		       <h3>Our Love Stories</h3>
+			<div class="story-grids">
+				<div class="col-md-4 story-grid">
+					 <img src="{% static 'img/DSC_1308.jpg' %}" class="img-responsive" alt="" />
+					 <h4>WE POSE</h4>
+				</div>
+				<div class="col-md-4 story-grid">
+					 <img src="{% static 'img/20150327_124344.jpg' %}" class="img-responsive" alt="" />
+					 <h4>FIRST DATE</h4>
+				</div>
+				<div class="col-md-4 story-grid">
+					 <img src=" {% static 'img/20180302_164454.jpg' %}" class="img-responsive" alt="" />
+					 <h4>ON VACATION</h4>
+				</div>
+				<div class="clearfix"></div>
+		   </div>
+		</div>
+	</div>
+<!--/event-section-->
+       <div class="event-section">
+		<div class="container">
+		    <h3>Our Moments</h3>
+			<div class="event-grids">
+				<div class="col-md-4 event-grid">
+					 <img src="{% static 'img/20170313_062443.jpg' %}" class="img-responsive" alt="" />
+					 <h4>BEFORE SUNRISE</h4>
+					<p>Sometimes you can’t explain what you see in a person. It’s just the way they take you to a place where no one else can,…</p>
+
+				</div>
+				<div class="col-md-4 event-grid">
+					 <img src="{% static 'img/20170826_100654.jpg' %}" class="img-responsive" alt="" />
+					 <h4>ON TRIP</h4>
+					<p>I am absolutely, definitely, positively, unquestionably, no strings attached, beyond any doubt, unconditionally, in love with you,…</p>
+
+				</div>
+				<div class="col-md-4 event-grid lost">
+					 <img src="{% static 'img/20170512_231106.jpg' %}" class="img-responsive" alt="" />
+					 <h4>AFTER CELEBRATION</h4>
+					<p>There’s a love that only you can give, a smile that only your lips can show, a scene in your eyes and my life that only you can complete,…</p>
+
+				</div>
+				<div class="clearfix"></div>
+		   </div>
+		</div>
+	</div>
+<!--/bottom-section-->
+	<div class="bottom-section">
+		<div class="container">
+		    <h3>Thanks for Loving Me 💖</h3>
+		</div>
+	</div>
+<!--footer-->
+
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
